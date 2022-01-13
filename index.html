@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="sass/main.css" />
 		<script src="https://kit.fontawesome.com/70156e9f67.js" crossorigin="anonymous"></script>
 		<title>Ohmyfood</title>
 		
@@ -13,10 +13,10 @@
         <a href="#"><img src="images/ohmyfood@2x.svg"/></a>
         </header><!-- Logo_seul -->
 	
-	<section><!-- Localisation -->
+	<section class="local"><!-- Localisation -->
         <form id="localisation">
             <label for="search" class="local">
-            <button type="submit" class="mark"><i class="fas fa-map-marker-alt"></i></button>
+            <button type="submit" class="btn__mark"><i class="fas fa-map-marker-alt"></i></button>
             </label>
             <input placeholder="Paris, Belleville" type="search" name="search" id="search"/>
         </form>
@@ -25,7 +25,7 @@
     <section><!-- Description+btn__explorer -->
         <h2>Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exceptions, séléctionnés par nos soins.</p>
-        <button class="btn--explorer">Explorer nos restaurants</button>
+        <button class="btn__explorer">Explorer nos restaurants</button>
 	</section><!-- Description+btn__explorer -->
 
 	<article><!-- Fonctionnement+3bulles -->
@@ -33,7 +33,7 @@
         <ul>
             <li><span class="num">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
             <li><span class="num">2</span><i class="fas fa-list-ul"></i>Composez votre menu</li>
-            <li><span class="num">3</span><i class="fas fa-store"></i>Degustez au restaurant</li>
+            <li class="cell3"><span class="num">3</span><i class="fas fa-store"></i>Degustez au restaurant</li>
         </ul>
     </article><!-- Fonctionnement+3bulles -->
 
@@ -75,14 +75,12 @@
             </div>
     </aside><!-- 4menus+liensversmenus -->
 		
-    
-    
-	    <footer><!-- identique_ttes_pages -->
-            <img src="images/ohmyfood@2x.svg"/>
+	<footer><!-- identique_ttes_pages -->
+            <h2>Ohmyfood</h2>
             <i class="fas fa-utensils"></i><p>Proposer un restaurant</p>
             <i class="fas fa-hands-helping"></i><p>Devenir partenaire</p>
             <p>Mentions légales</p>
             <a href="mailto:ohmyfoodcontact@gmail.com" title="mail"><p>Contact</p></a>
-	    </footer><!-- identique_ttes_pages -->
+	</footer><!-- identique_ttes_pages -->
 	</body>
 </html>

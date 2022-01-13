@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
+@font-face {
+  font-family: 'robotoregular';
+  src: url("Roboto-Regular-webfont.eot");
+  src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular-webfont.woff2") format("woff2"), url("Roboto-Regular-webfont.woff") format("woff"), url("Roboto-Regular-webfont.ttf") format("truetype"), url("Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotobold';
+  src: url("Roboto-Bold-webfont.eot");
+  src: url("Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Bold-webfont.woff2") format("woff2"), url("Roboto-Bold-webfont.woff") format("woff"), url("Roboto-Bold-webfont.ttf") format("truetype"), url("Roboto-Bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* shrikhand-regular - latin */
+.local {
+  background-color: #00000025;
+}
+
+section {
+  background-color: #98e2cf1a;
+}
+
+h2, h3 {
+  font-family: 'Shrikhand', Arial, sans-serif;
+}
+
+p {
+  font-family: 'robotoregular', 'robotobold', Arial, sans-serif;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn {
+  color: #ffffff;
+}
+
+.btn__explorer {
+  background-color: #9256dc;
+}
+/*# sourceMappingURL=main.css.map */
