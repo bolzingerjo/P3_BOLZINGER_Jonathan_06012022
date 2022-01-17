@@ -1,6 +1,15 @@
 .btn {
-    color: $Blanc;
+        &__mark{
+        border: none;
+        background-color: $trans;
+    }
         &__explorer {
-        background-color: $Primaire;
+        background-color: $Secondaire;
+        color: $Blanc;
+        border-radius: 25px 25px 25px 25px;
+        font-weight: bold;
+        font-size: 16px;
+        width: 250px;
+        height: 50px;
         }
 }

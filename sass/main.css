@@ -17,11 +17,33 @@
 
 /* shrikhand-regular - latin */
 .local {
-  background-color: #00000025;
+  background-color: rgba(0, 0, 0, 0.145);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0px 10px 0px;
 }
 
-section {
+.local .search {
+  border: none;
+  background-color: #00000000;
+}
+
+.reserv {
   background-color: #98e2cf1a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h2, h3 {
@@ -30,18 +52,49 @@ h2, h3 {
 
 p {
   font-family: 'robotoregular', 'robotobold', Arial, sans-serif;
+  font-size: 15px;
 }
 
-footer {
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.foot {
   background-color: #000000;
   color: #ffffff;
+  padding: 10px;
 }
 
-.btn {
-  color: #ffffff;
+.entete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.entete a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn__mark {
+  border: none;
+  background-color: #00000000;
 }
 
 .btn__explorer {
-  background-color: #9256dc;
+  background-color: #FF79DA;
+  color: #ffffff;
+  border-radius: 25px 25px 25px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 250px;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */

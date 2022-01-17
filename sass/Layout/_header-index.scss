@@ -1,0 +1,7 @@
+.entete {
+    @include centre;
+        a{
+            text-decoration: none;
+            color: $Noir;
+        }
+}

@@ -28,7 +28,15 @@
 
 .local {
         background-color: $Noir__fond;
+        @include centre;
+        padding: 10px 0px 10px 0px;
+                .search{
+                        border: none;
+                        background-color: $trans;
+                }
+
 }
-section {
+.reserv {
         background-color: $Menthe__fond;
+        @include centre-colo;
 }
