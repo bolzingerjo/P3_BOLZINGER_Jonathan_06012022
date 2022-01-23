@@ -139,6 +139,7 @@ li i {
           box-shadow: 5px 5px 10px silver;
   margin-top: 20px;
   max-width: 100%;
+  position: relative;
 }
 
 .restau img {
@@ -151,7 +152,7 @@ li i {
   color: #000000;
 }
 
-.nouv p {
+.nouv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,9 +169,13 @@ li i {
   font-size: 20px;
   width: 100px;
   height: 30px;
-  position: relative;
-  bottom: 330px;
-  left: 300px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.coeur--plein {
+  color: #9256dc;
 }
 
 h2 {
@@ -196,6 +201,11 @@ body {
   background-color: #000000;
   color: #ffffff;
   padding: 10px;
+}
+
+.foot a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .entete {
