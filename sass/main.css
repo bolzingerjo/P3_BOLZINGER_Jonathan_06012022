@@ -133,7 +133,17 @@ li i {
   color: #9256dc;
 }
 
+aside {
+  background-color: rgba(152, 226, 207, 0.24);
+  padding: 40px 10px 40px 10px;
+}
+
+.titre {
+  font-size: 35px;
+}
+
 .restau {
+  background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
   -webkit-box-shadow: 5px 5px 10px silver;
           box-shadow: 5px 5px 10px silver;
@@ -150,6 +160,17 @@ li i {
 .restau a {
   text-decoration: none;
   color: #000000;
+}
+
+.restau h3 {
+  margin: 0px;
+  padding: 15px 0px 5px 10px;
+}
+
+.restau p {
+  margin: 0px;
+  padding: 0px 0px 15px 10px;
+  font-size: 20px;
 }
 
 .nouv {
@@ -175,7 +196,42 @@ li i {
 }
 
 .coeur--plein {
+  z-index: 1;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+
+.coeur--plein:hover {
+  z-index: 3;
   color: #9256dc;
+}
+
+.coeur--vide {
+  z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+
+.coeur--vide:hover {
+  z-index: 1;
+}
+
+/* fin index */
+/* Menu */
+.photo-nom {
+  background-color: rgba(152, 226, 207, 0.24);
+  max-width: 640px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.photo-nom h2 {
+  margin: 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 h2 {
@@ -200,12 +256,20 @@ body {
 .foot {
   background-color: #000000;
   color: #ffffff;
-  padding: 10px;
+  padding: 20px;
 }
 
 .foot a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.foot i {
+  padding-right: 5px;
+}
+
+.foot h2 {
+  margin: 0px;
 }
 
 .entete {
@@ -222,13 +286,35 @@ body {
   color: #000000;
 }
 
+.entete-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.entete-menu a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.entete-menu i {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  font-size: 25px;
+}
+
 .btn__mark {
   border: none;
   background-color: #00000000;
 }
 
 .btn__explorer {
-  background-color: #FF79DA;
+  background: -webkit-gradient(linear, right bottom, left top, from(#9256dc), to(#FF79DA));
+  background: linear-gradient(to left top, #9256dc, #FF79DA);
   color: #ffffff;
   border-radius: 25px 25px 25px 25px;
   font-weight: bold;
@@ -237,7 +323,14 @@ body {
   height: 50px;
   margin: 20px;
   border: none;
-  -webkit-box-shadow: -8px -8px 20px #573186c2 inset;
-          box-shadow: -8px -8px 20px #573186c2 inset;
+  -webkit-box-shadow: 8px 8px 20px silver;
+          box-shadow: 8px 8px 20px silver;
+}
+
+.btn__explorer:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#a062eb), to(#ff86dd));
+  background: linear-gradient(to left top, #a062eb, #ff86dd);
+  -webkit-box-shadow: 8px 8px 20px #696767;
+          box-shadow: 8px 8px 20px #696767;
 }
 /*# sourceMappingURL=main.css.map */

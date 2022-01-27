@@ -1,0 +1,13 @@
+.entete-menu {
+    @include centre;
+        a{
+            text-decoration: none;
+            color: $Noir;
+        }
+}
+.entete-menu i{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    font-size: 25px;
+}

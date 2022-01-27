@@ -97,13 +97,20 @@ li i{
 .num--3 i{
         color: $Primaire;
 }
+aside{
+        background-color: $Menthe__fond;
+        padding: 40px 10px 40px 10px;
+}
+.titre{
+        font-size: 35px;
+}
 .restau{
+        background-color: $Blanc;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 5px 5px 10px silver;
         margin-top: 20px;
         max-width: 100%;
         position: relative;
-
 }
 .restau img{
         border-radius: 20px 20px 0px 0px;
@@ -112,6 +119,15 @@ li i{
 .restau a{
         text-decoration: none;
         color: $Noir;
+}
+.restau h3{
+        margin: 0px;
+        padding: 15px 0px 5px 10px;
+}
+.restau p{
+        margin: 0px;
+        padding: 0px 0px 15px 10px;
+        font-size: 20px;
 }
 .nouv {
         @include centre-li;
@@ -127,5 +143,35 @@ li i{
         right: 20px;
 }
 .coeur--plein{
-        color: $Primaire;
+        z-index: 1;
+        color: $Blanc;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 30px;
+                &:hover{
+                        z-index: 3;
+                        color: $Primaire;
+                }
+}
+.coeur--vide{
+        z-index: 2;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 30px;
+                &:hover{
+                        z-index: 1;
+                }
+}
+/* fin index */
+/* Menu */
+.photo-nom{
+        background-color: $Menthe__fond;
+        max-width: 640px;
+        border-radius: 20px 20px 0px 0px;
+}
+.photo-nom h2{
+        margin: 0px;
+        border-radius: 20px 20px 0px 0px;
 }
