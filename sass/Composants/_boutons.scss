@@ -19,4 +19,21 @@
                 box-shadow: 8px 8px 20px rgb(105, 103, 103);
             }
         }
+        &--commander{
+        background: linear-gradient(to left top, $Primaire, $Secondaire);
+        color: $Blanc;
+        border-radius: 25px 25px 25px 25px;
+        font-weight: bold;
+        font-size: 16px;
+        width: 250px;
+        height: 50px;
+        margin: 20px;
+        border: none;
+        box-shadow: 8px 8px 20px silver;
+            &:hover{
+                background: linear-gradient(to left top, $Primaire-btn, $Secondaire-btn);
+                box-shadow: 8px 8px 20px rgb(105, 103, 103);
+            }
+
+        }
 }

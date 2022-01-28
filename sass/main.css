@@ -223,15 +223,76 @@ aside {
 
 /* fin index */
 /* Menu */
-.photo-nom {
-  background-color: rgba(152, 226, 207, 0.24);
-  max-width: 640px;
-  border-radius: 20px 20px 0px 0px;
-}
-
 .photo-nom h2 {
   margin: 0px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+  top: 446px;
+  background-color: #9fb6b0;
+  font-size: 35px;
+  padding-left: 20px;
+  padding-top: 30px;
+  width: 620px;
+}
+
+.photo-nom img {
+  position: relative;
+}
+
+.photo-nom i {
+  position: absolute;
+  right: 40px;
+  top: 480px;
+  font-size: 30px;
+}
+
+.menu-mep {
+  background-color: #9fb6b0;
+  margin: 0px;
+  padding: 40px 10px 40px 10px;
+}
+
+.menu-mep h3 {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.plats {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+.plats h4 {
+  margin: 0px;
+}
+
+.plats p {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prix {
+  font-weight: bold;
+}
+
+.bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h2 {
@@ -328,6 +389,28 @@ body {
 }
 
 .btn__explorer:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#a062eb), to(#ff86dd));
+  background: linear-gradient(to left top, #a062eb, #ff86dd);
+  -webkit-box-shadow: 8px 8px 20px #696767;
+          box-shadow: 8px 8px 20px #696767;
+}
+
+.btn--commander {
+  background: -webkit-gradient(linear, right bottom, left top, from(#9256dc), to(#FF79DA));
+  background: linear-gradient(to left top, #9256dc, #FF79DA);
+  color: #ffffff;
+  border-radius: 25px 25px 25px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 250px;
+  height: 50px;
+  margin: 20px;
+  border: none;
+  -webkit-box-shadow: 8px 8px 20px silver;
+          box-shadow: 8px 8px 20px silver;
+}
+
+.btn--commander:hover {
   background: -webkit-gradient(linear, right bottom, left top, from(#a062eb), to(#ff86dd));
   background: linear-gradient(to left top, #a062eb, #ff86dd);
   -webkit-box-shadow: 8px 8px 20px #696767;

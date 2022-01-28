@@ -13,3 +13,7 @@
     justify-content: center;
     align-items: center;
 }
+@mixin espace{
+    display: flex;
+    justify-content: space-between;
+}

@@ -166,12 +166,55 @@ aside{
 }
 /* fin index */
 /* Menu */
-.photo-nom{
-        background-color: $Menthe__fond;
-        max-width: 640px;
-        border-radius: 20px 20px 0px 0px;
-}
+
 .photo-nom h2{
         margin: 0px;
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 30px 30px 0px 0px;
+        position: absolute;
+        top: 446px;
+        background-color: $Vert__fond;
+        font-size: 35px;
+        padding-left: 20px;
+        padding-top: 30px;
+        width: 620px;
+}
+.photo-nom img{
+        position: relative;
+}
+.photo-nom i{
+        position: absolute;
+        right: 40px;
+        top: 480px;
+        font-size: 30px;
+}
+.menu-mep{
+        background-color: $Vert__fond;
+        margin: 0px;
+        padding: 40px 10px 40px 10px;
+}
+.menu-mep h3{
+        margin: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+}
+.plats{
+        background-color: $Blanc;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px 0px 10px 0px;
+}
+.plats h4{
+        margin: 0px;
+}
+.plats p{
+        margin: 0px;
+        @include espace;
+}
+.prix{
+        font-weight: bold;
+}
+.bouton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
