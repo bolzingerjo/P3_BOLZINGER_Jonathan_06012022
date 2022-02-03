@@ -2,6 +2,7 @@
         &__mark{
         border: none;
         background-color: $trans;
+        cursor: pointer;
     }
         &__explorer {
         background: linear-gradient(to left top, $Primaire, $Secondaire);
@@ -15,8 +16,10 @@
         border: none;
         box-shadow: 8px 8px 20px silver;
             &:hover{
+                transition: all 1s ease;
                 background: linear-gradient(to left top, $Primaire-btn, $Secondaire-btn);
                 box-shadow: 8px 8px 20px rgb(105, 103, 103);
+                cursor: pointer;
             }
         }
         &--commander{
@@ -31,8 +34,10 @@
         border: none;
         box-shadow: 8px 8px 20px silver;
             &:hover{
+                transition: all 1s ease;
                 background: linear-gradient(to left top, $Primaire-btn, $Secondaire-btn);
                 box-shadow: 8px 8px 20px rgb(105, 103, 103);
+                cursor: pointer;
             }
 
         }

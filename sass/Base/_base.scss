@@ -26,6 +26,9 @@
         /* shrikhand-regular - latin */
         @import url('https://fonts.googleapis.com/css2? family= Shrikhand & display=swap');
 
+body{
+        margin: 0px;
+}
 .local {
         background-color: $Noir__fond;
         @include centre;
@@ -143,30 +146,30 @@ aside{
         right: 20px;
 }
 .coeur--plein{
-        z-index: 1;
+        opacity: 0;
         color: $Blanc;
         position: absolute;
         bottom: 20px;
         right: 20px;
         font-size: 30px;
                 &:hover{
-                        z-index: 3;
+                        transition: all 0.5s ease;
+                        opacity: 1;
                         color: $Primaire;
                 }
 }
 .coeur--vide{
-        z-index: 2;
+        opacity: 1;
         position: absolute;
         bottom: 20px;
         right: 20px;
         font-size: 30px;
                 &:hover{
-                        z-index: 1;
+                        opacity: 0;
                 }
 }
 /* fin index */
 /* Menu */
-
 .photo-nom h2{
         margin: 0px;
         border-radius: 30px 30px 0px 0px;
@@ -181,11 +184,27 @@ aside{
 .photo-nom img{
         position: relative;
 }
-.photo-nom i{
+.coeur--plein__menu{
+        opacity: 0;
         position: absolute;
         right: 40px;
         top: 480px;
         font-size: 30px;
+        &:hover{
+                transition: all 0.5s ease;
+                opacity: 1;
+                color: $Primaire;
+        }
+}
+.coeur--vide__menu{
+        opacity: 1;
+        position: absolute;
+        right: 40px;
+        top: 480px;
+        font-size: 30px;
+        &:hover{
+                opacity: 0;
+        }
 }
 .menu-mep{
         background-color: $Vert__fond;
@@ -200,15 +219,41 @@ aside{
 .plats{
         background-color: $Blanc;
         border-radius: 20px;
-        padding: 10px;
+        padding: 10px 20px 10px 20px;
         margin: 10px 0px 10px 0px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease;
 }
+.plats {
+        &:hover + .check {
+            transform: translate(-80px, 0);
+        }
+    }
 .plats h4{
         margin: 0px;
 }
 .plats p{
         margin: 0px;
         @include espace;
+}
+.check{
+        position: absolute;
+        background-color: $Tertiaire;
+        top: 0px;
+        bottom: 0px;
+        right: -80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        color: $Blanc;
+        font-size: 40px;
+        &:hover{
+                right: 0px;
+                transition: all 0.5s ease;
+                transform: rotate(-360deg);
+                }
 }
 .prix{
         font-weight: bold;
@@ -218,3 +263,4 @@ aside{
         justify-content: center;
         align-items: center;
 }
+/* Menu */
