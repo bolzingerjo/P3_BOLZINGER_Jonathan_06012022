@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2? family= Shrikhand & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @font-face {
   font-family: 'robotoregular';
   src: url("Roboto-Regular-webfont.eot");
@@ -285,6 +285,7 @@ aside {
 }
 
 .plats {
+  display: block;
   background-color: #ffffff;
   border-radius: 20px;
   padding: 10px 20px 10px 20px;
@@ -295,9 +296,14 @@ aside {
   transition: all 0.5s ease;
 }
 
-.plats:hover + .check {
+.plats:hover .check {
   -webkit-transform: translate(-80px, 0);
           transform: translate(-80px, 0);
+  right: 0px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .plats h4 {
@@ -332,14 +338,6 @@ aside {
   width: 80px;
   color: #ffffff;
   font-size: 40px;
-}
-
-.check:hover {
-  right: 0px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
 }
 
 .prix {
