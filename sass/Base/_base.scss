@@ -211,12 +211,30 @@ aside{
         margin: 0px;
         padding: 40px 10px 40px 10px;
 }
-.menu-mep h3{
+.titresoul {
         margin: 0px;
         padding-top: 20px;
         padding-bottom: 10px;
+        border-bottom: 2px solid $Tertiaire;
 }
 .plats{
+        @for $i from 1 to 10 {
+                &--#{$i} {
+                        animation-delay: 1s / 10 * $i;
+                }
+        }
+}
+@keyframes menu {
+        0%{
+            opacity: 0;
+            transform: translateY(20%)
+            }
+        100%{
+            opacity: 1;
+            transform: translateY(0%)
+            }
+    }
+.plats--1, .plats--2, .plats--3, .plats--4, .plats--5, .plats--6, .plats--7, .plats--8, .plats--9{
         display: block;
         background-color: $Blanc;
         border-radius: 20px;
@@ -225,19 +243,20 @@ aside{
         position: relative;
         overflow: hidden;
         transition: all 0.5s ease;
-}
-.plats {
+        animation-name: menu;
+        animation-duration: 1s;
+        animation-fill-mode: backwards;
         &:hover .check {
                 transform: translate(-80px, 0);
                  right: 0px;
                 transition: all 0.5s ease;
                  transform: rotate(-360deg);
         }
-    }
-.plats h4{
+}
+h4{
         margin: 0px;
 }
-.plats p{
+.menutxt {
         margin: 0px;
         @include espace;
 }

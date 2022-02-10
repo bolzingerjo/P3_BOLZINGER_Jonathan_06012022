@@ -278,13 +278,85 @@ aside {
   padding: 40px 10px 40px 10px;
 }
 
-.menu-mep h3 {
+.titresoul {
   margin: 0px;
   padding-top: 20px;
   padding-bottom: 10px;
+  border-bottom: 2px solid #99E2D0;
 }
 
-.plats {
+.plats--1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.plats--2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.plats--3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.plats--4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.plats--5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.plats--6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.plats--7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.plats--8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.plats--9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+@-webkit-keyframes menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.plats--1, .plats--2, .plats--3, .plats--4, .plats--5, .plats--6, .plats--7, .plats--8, .plats--9 {
   display: block;
   background-color: #ffffff;
   border-radius: 20px;
@@ -294,9 +366,15 @@ aside {
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-animation-name: menu;
+          animation-name: menu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
-.plats:hover .check {
+.plats--1:hover .check, .plats--2:hover .check, .plats--3:hover .check, .plats--4:hover .check, .plats--5:hover .check, .plats--6:hover .check, .plats--7:hover .check, .plats--8:hover .check, .plats--9:hover .check {
   -webkit-transform: translate(-80px, 0);
           transform: translate(-80px, 0);
   right: 0px;
@@ -306,11 +384,11 @@ aside {
           transform: rotate(-360deg);
 }
 
-.plats h4 {
+h4 {
   margin: 0px;
 }
 
-.plats p {
+.menutxt {
   margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
