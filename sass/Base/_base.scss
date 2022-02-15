@@ -216,6 +216,7 @@ aside{
         padding-top: 20px;
         padding-bottom: 10px;
         border-bottom: 2px solid $Tertiaire;
+        width: 70px;
 }
 .plats{
         @for $i from 1 to 10 {
@@ -251,6 +252,10 @@ aside{
                  right: 0px;
                 transition: all 0.5s ease;
                  transform: rotate(-360deg);
+        }
+        &:hover .prix{
+                transform: translate(-80px, 0);
+                transition: all 0.5s ease;
         }
 }
 h4{

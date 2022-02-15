@@ -283,6 +283,7 @@ aside {
   padding-top: 20px;
   padding-bottom: 10px;
   border-bottom: 2px solid #99E2D0;
+  width: 70px;
 }
 
 .plats--1 {
@@ -382,6 +383,13 @@ aside {
   transition: all 0.5s ease;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
+}
+
+.plats--1:hover .prix, .plats--2:hover .prix, .plats--3:hover .prix, .plats--4:hover .prix, .plats--5:hover .prix, .plats--6:hover .prix, .plats--7:hover .prix, .plats--8:hover .prix, .plats--9:hover .prix {
+  -webkit-transform: translate(-80px, 0);
+          transform: translate(-80px, 0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 h4 {
