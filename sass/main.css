@@ -329,23 +329,24 @@ aside {
   margin: 0px;
   border-radius: 30px 30px 0px 0px;
   position: absolute;
-  top: 446px;
-  background-color: #9fb6b0;
+  top: 325px;
+  background-color: #f0fcf8;
   font-size: 35px;
-  padding-left: 20px;
   padding-top: 30px;
-  width: 620px;
+  padding-left: 10px;
+  width: 97.5%;
 }
 
 .photo-nom img {
-  position: relative;
+  width: 99%;
+  height: 300px;
 }
 
 .coeur--plein__menu {
   opacity: 0;
   position: absolute;
   right: 40px;
-  top: 480px;
+  top: 360px;
   font-size: 30px;
 }
 
@@ -360,7 +361,7 @@ aside {
   opacity: 1;
   position: absolute;
   right: 40px;
-  top: 480px;
+  top: 360px;
   font-size: 30px;
 }
 
@@ -369,7 +370,7 @@ aside {
 }
 
 .menu-mep {
-  background-color: #9fb6b0;
+  background-color: #f0fcf8;
   margin: 0px;
   padding: 40px 10px 40px 10px;
 }
@@ -457,8 +458,10 @@ aside {
   display: block;
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 10px 20px 10px 20px;
+  padding: 20px;
   margin: 10px 0px 10px 0px;
+  -webkit-box-shadow: 4px 4px 10px silver;
+          box-shadow: 4px 4px 10px silver;
   position: relative;
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
@@ -493,6 +496,7 @@ h4 {
 }
 
 .menutxt {
+  padding-top: 4px;
   margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;

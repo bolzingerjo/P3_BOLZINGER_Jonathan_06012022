@@ -223,21 +223,22 @@ aside{
         margin: 0px;
         border-radius: 30px 30px 0px 0px;
         position: absolute;
-        top: 446px;
-        background-color: $Vert__fond;
+        top: 325px;
+        background-color: $Menthe__fond;
         font-size: 35px;
-        padding-left: 20px;
         padding-top: 30px;
-        width: 620px;
+        padding-left: 10px;
+        width: 97.5%;
 }
 .photo-nom img{
-        position: relative;
+        width: 99%;
+        height: 300px;
 }
 .coeur--plein__menu{
         opacity: 0;
         position: absolute;
         right: 40px;
-        top: 480px;
+        top: 360px;
         font-size: 30px;
         &:hover{
                 transition: all 0.5s ease;
@@ -249,14 +250,14 @@ aside{
         opacity: 1;
         position: absolute;
         right: 40px;
-        top: 480px;
+        top: 360px;
         font-size: 30px;
         &:hover{
                 opacity: 0;
         }
 }
 .menu-mep{
-        background-color: $Vert__fond;
+        background-color: $Menthe__fond;
         margin: 0px;
         padding: 40px 10px 40px 10px;
 }
@@ -288,8 +289,9 @@ aside{
         display: block;
         background-color: $Blanc;
         border-radius: 20px;
-        padding: 10px 20px 10px 20px;
+        padding: 20px;
         margin: 10px 0px 10px 0px;
+        box-shadow: 4px 4px 10px silver;
         position: relative;
         overflow: hidden;
         transition: all 0.5s ease;
@@ -311,6 +313,7 @@ h4{
         margin: 0px;
 }
 .menutxt {
+        padding-top: 4px;
         margin: 0px;
         @include espace;
 }
