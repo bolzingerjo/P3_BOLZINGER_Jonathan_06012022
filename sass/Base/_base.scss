@@ -233,6 +233,15 @@ aside{
 .photo-nom img{
         width: 99%;
         height: 300px;
+                @media (min-width: 640px) {
+                        max-width: 640px;
+                }
+}
+.photo-nom{
+        @media (min-width: 640px) {
+                display: flex;
+                justify-content: center;
+        }
 }
 .coeur--plein__menu{
         opacity: 0;
@@ -260,6 +269,12 @@ aside{
         background-color: $Menthe__fond;
         margin: 0px;
         padding: 40px 10px 40px 10px;
+                @media (min-width: 960px) {
+                        width: 98%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                }
 }
 .titresoul {
         margin: 0px;
@@ -332,6 +347,7 @@ h4{
 }
 .prix{
         font-weight: bold;
+        background-color: $Blanc;
 }
 .bouton{
         display: flex;
