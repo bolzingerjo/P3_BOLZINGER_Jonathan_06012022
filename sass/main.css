@@ -20,6 +20,25 @@ body {
   margin: 0px;
 }
 
+@media (min-width: 640px) {
+  .mepbodymenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ecebeb;
+  }
+}
+
 .local {
   background-color: rgba(0, 0, 0, 0.145);
   display: -webkit-box;
@@ -77,26 +96,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media (min-width: 960px) {
-  .corps {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -171,6 +173,7 @@ li {
 
 @media (min-width: 960px) {
   .num {
+    opacity: 0;
     position: absolute;
     left: 5px;
   }
@@ -191,6 +194,7 @@ li i {
 
 @media (min-width: 960px) {
   li i {
+    opacity: 0;
     position: absolute;
     left: 50px;
   }
@@ -224,6 +228,12 @@ aside {
   }
 }
 
+@media (min-width: 960px) {
+  aside {
+    width: 960px;
+  }
+}
+
 .titre {
   font-size: 35px;
 }
@@ -233,6 +243,13 @@ aside {
     height: 50px;
     padding-right: 200px;
     padding-left: 200px;
+  }
+}
+
+@media (min-width: 960px) {
+  .titre {
+    padding-right: 300px;
+    padding-left: 300px;
   }
 }
 
@@ -337,6 +354,18 @@ aside {
   width: 97.5%;
 }
 
+@media (min-width: 640px) {
+  .photo-nom h2 {
+    width: 99%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-nom h2 {
+    width: 1210px;
+  }
+}
+
 .photo-nom img {
   width: 99%;
   height: 300px;
@@ -374,6 +403,20 @@ aside {
   color: #9256dc;
 }
 
+@media (min-width: 640px) {
+  .coeur--plein__menu {
+    position: absolute;
+    right: 200px;
+  }
+}
+
+@media (min-width: 960px) {
+  .coeur--plein__menu {
+    position: absolute;
+    left: 750px;
+  }
+}
+
 .coeur--vide__menu {
   opacity: 1;
   position: absolute;
@@ -386,10 +429,30 @@ aside {
   opacity: 0;
 }
 
+@media (min-width: 640px) {
+  .coeur--vide__menu {
+    position: absolute;
+    right: 200px;
+  }
+}
+
+@media (min-width: 960px) {
+  .coeur--vide__menu {
+    position: absolute;
+    left: 750px;
+  }
+}
+
 .menu-mep {
   background-color: #f0fcf8;
   margin: 0px;
   padding: 40px 10px 40px 10px;
+}
+
+@media (min-width: 640px) {
+  .menu-mep {
+    width: 97%;
+  }
 }
 
 @media (min-width: 960px) {
@@ -403,6 +466,12 @@ aside {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-mep {
+    max-width: 1200px;
   }
 }
 
@@ -563,6 +632,7 @@ h4 {
 }
 
 .bouton {
+  background-color: #f0fcf8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,6 +642,19 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .bouton {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bouton {
+    width: 1220px;
+  }
 }
 
 /* Menu */
@@ -610,6 +693,43 @@ body {
 }
 
 .foot h2 {
+  margin: 0px;
+}
+
+.footmenu {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+@media (min-width: 640px) {
+  .footmenu {
+    width: 94.5%;
+  }
+}
+
+@media (min-width: 960px) {
+  .footmenu {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footmenu {
+    width: 1180px;
+  }
+}
+
+.footmenu a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footmenu i {
+  padding-right: 5px;
+}
+
+.footmenu h2 {
   margin: 0px;
 }
 

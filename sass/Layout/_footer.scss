@@ -1,7 +1,7 @@
 .foot {
     background-color: $Noir;
     color: $Blanc;
-    padding: 20px;  
+    padding: 20px;
 }
 .foot a{
     text-decoration: none;
@@ -11,5 +11,29 @@
     padding-right: 5px;
 }
 .foot h2{
+    margin: 0px;
+}
+.footmenu {
+    background-color: $Noir;
+    color: $Blanc;
+    padding: 20px;
+    @media (min-width: 640px) {
+        width: 94.5%;
+    }
+    @media (min-width: 960px) {
+        width: 95%;
+    }
+    @media (min-width: 1200px) {
+        width: 1180px;
+    }
+}
+.footmenu a{
+    text-decoration: none;
+    color: $Blanc;
+}
+.footmenu i{
+    padding-right: 5px;
+}
+.footmenu h2{
     margin: 0px;
 }
