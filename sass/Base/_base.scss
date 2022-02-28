@@ -30,6 +30,26 @@ body{
         margin: 0px;
         
 }
+.loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-color: #FFF;
+        z-index: 100;
+        text-align: center;
+        padding-top: 40px;
+        animation: disapear 3s forwards;
+}     
+@keyframes disapear {
+        0% { opacity: 1; }
+        30% { opacity: 1; }
+        99% { opacity: 0; }
+        100% { opacity: 0; display: none; z-index: -100; }
+      }
+
 .mepbodymenu {
         @media (min-width: 640px) {
                 display: flex;
@@ -93,15 +113,16 @@ li{
         background-color: $Menthe__fond;
         border-radius: 30px;
         @include centre-li;
-        margin: 0px 0px 20px 0px;
+        margin: 0px 0px 20px 10px;
         font-size: 20px;
         font-weight: bold;
         box-shadow: 4px 4px 10px silver;
+        position: relative;
 }
 .num{
         font-size: 15px;
         position: absolute;
-        left: 5px;
+        left: -10px;
         border: 1px $Primaire solid;
         background-color: $Primaire;
         color: $Blanc;
@@ -109,29 +130,11 @@ li{
         height: 25px;
         border-radius: 20px;
         @include centre-li;
-        @media (min-width: 640px) {
-                position: absolute;
-                left: 100px;
-        }
-        @media (min-width: 960px) {
-                opacity: 0;
-                position: absolute;
-                left: 5px;
-        }
 }
 li i{
         position: absolute;
         left: 50px;
         font-size: 22px;
-        @media (min-width: 640px) {
-                position: absolute;
-                left: 150px;
-        }
-        @media (min-width: 960px) {
-                opacity: 0;
-                position: absolute;
-                left: 50px;
-        }
 }
 .num--3{
         background-color: $Primaire-trans;
@@ -218,6 +221,7 @@ aside{
                         transition: all 0.5s ease;
                         opacity: 1;
                         color: $Primaire;
+                        cursor: pointer;
                 }
 }
 .coeur--vide{
@@ -228,77 +232,79 @@ aside{
         font-size: 30px;
                 &:hover{
                         opacity: 0;
+                        cursor: pointer;
                 }
 }
 /* fin index */
 /* Menu */
 .photo-nom h2{
-        margin: 0px;
         border-radius: 30px 30px 0px 0px;
         position: absolute;
-        top: 325px;
+        top: 225px;
         background-color: $Menthe__fond;
         font-size: 35px;
         padding-top: 30px;
         padding-left: 10px;
-        width: 97.5%;
-        @media (min-width: 640px) {
-                width: 99%;
-        }
-        @media (min-width: 1200px) {
-                width: 1210px;
-        }
-}
-.photo-nom img{
-        width: 99%;
-        height: 300px;
-                @media (min-width: 640px) {
-                        max-width: 640px;
-                }
+        width: 100%;
 }
 .photo-nom{
-        @media (min-width: 640px) {
-                display: flex;
-                justify-content: center;
-        }
+        background-image: url(../../images/Lapalettedugoutentete1900.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 100%;
+        position: relative;
 }
+/* Kev */
+/*.plats--1 {
+        max-width: 300px;
+        padding: 20px 30px 20px 20px;
+      }
+      
+      .plats--1 .left h4,
+      .plats--1 .left p.menutxt {
+        text-overflow: ellipsis;
+        overflow: hidden; 
+        white-space: nowrap;
+        width: 260px;
+        display: block;
+      }
+      
+      .plats--1:hover .left {
+        padding-right: 110px;
+      }
+      
+      .prix {
+        width: 30px;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+/* Kev */
 .coeur--plein__menu{
         opacity: 0;
         position: absolute;
         right: 40px;
-        top: 360px;
+        top: 250px;
         font-size: 30px;
         &:hover{
                 transition: all 0.5s ease;
                 opacity: 1;
                 color: $Primaire;
-        }
-        @media (min-width: 640px) {
-                position: absolute;
-                right: 200px;
-        }
-        @media (min-width: 960px) {
-                position: absolute;
-                left: 750px;
-        }
+                cursor: pointer;
 }
 .coeur--vide__menu{
         opacity: 1;
         position: absolute;
         right: 40px;
-        top: 360px;
+        top: 250px;
         font-size: 30px;
         &:hover{
                 opacity: 0;
-        }
-        @media (min-width: 640px) {
-                position: absolute;
-                right: 200px;
-        }
-        @media (min-width: 960px) {
-                position: absolute;
-                left: 750px;
-        }
+                cursor: pointer;
 }
 .menu-mep{
         background-color: $Menthe__fond;
