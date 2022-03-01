@@ -364,8 +364,7 @@ aside {
 
 /* fin index */
 /* Menu */
-.photo-nom h2 {
-  margin: 0px;
+.photo-nom--1 h2 {
   border-radius: 30px 30px 0px 0px;
   position: absolute;
   top: 225px;
@@ -373,9 +372,10 @@ aside {
   font-size: 35px;
   padding-top: 30px;
   padding-left: 10px;
+  width: 99%;
 }
 
-.photo-nom {
+.photo-nom--1 {
   background-image: url(../../images/Lapalettedugoutentete1900.jpg);
   background-size: cover;
   background-position: center;
@@ -384,40 +384,11 @@ aside {
   position: relative;
 }
 
-/* Kev */
-/*.plats--1 {
-        max-width: 300px;
-        padding: 20px 30px 20px 20px;
-      }
-      
-      .plats--1 .left h4,
-      .plats--1 .left p.menutxt {
-        text-overflow: ellipsis;
-        overflow: hidden; 
-        white-space: nowrap;
-        width: 260px;
-        display: block;
-      }
-      
-      .plats--1:hover .left {
-        padding-right: 110px;
-      }
-      
-      .prix {
-        width: 30px;
-        text-align: center;
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-/* Kev */
 .coeur--plein__menu {
   opacity: 0;
   position: absolute;
   right: 40px;
-  top: 250px;
+  top: 290px;
   font-size: 30px;
 }
 
@@ -429,45 +400,17 @@ aside {
   cursor: pointer;
 }
 
-@media (min-width: 640px) {
-  .coeur--plein__menu {
-    position: absolute;
-    right: 200px;
-  }
-}
-
-@media (min-width: 960px) {
-  .coeur--plein__menu {
-    position: absolute;
-    left: 750px;
-  }
-}
-
 .coeur--vide__menu {
   opacity: 1;
   position: absolute;
   right: 40px;
-  top: 250px;
+  top: 290px;
   font-size: 30px;
 }
 
 .coeur--vide__menu:hover {
   opacity: 0;
   cursor: pointer;
-}
-
-@media (min-width: 640px) {
-  .coeur--vide__menu {
-    position: absolute;
-    right: 200px;
-  }
-}
-
-@media (min-width: 960px) {
-  .coeur--vide__menu {
-    position: absolute;
-    left: 750px;
-  }
 }
 
 .menu-mep {
@@ -493,12 +436,6 @@ aside {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media (min-width: 1200px) {
-  .menu-mep {
-    max-width: 1200px;
   }
 }
 
@@ -583,9 +520,10 @@ aside {
 
 .plats--1, .plats--2, .plats--3, .plats--4, .plats--5, .plats--6, .plats--7, .plats--8, .plats--9 {
   display: block;
+  max-width: 300px;
+  padding: 20px 30px 20px 20px;
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 20px;
   margin: 10px 0px 10px 0px;
   -webkit-box-shadow: 4px 4px 10px silver;
           box-shadow: 4px 4px 10px silver;
@@ -604,6 +542,13 @@ aside {
 .plats--1:hover .check, .plats--2:hover .check, .plats--3:hover .check, .plats--4:hover .check, .plats--5:hover .check, .plats--6:hover .check, .plats--7:hover .check, .plats--8:hover .check, .plats--9:hover .check {
   -webkit-transform: translate(-80px, 0);
           transform: translate(-80px, 0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.plats--1:hover i, .plats--2:hover i, .plats--3:hover i, .plats--4:hover i, .plats--5:hover i, .plats--6:hover i, .plats--7:hover i, .plats--8:hover i, .plats--9:hover i {
+  -webkit-transform: translate(-80px, 0);
+          transform: translate(-80px, 0);
   right: 0px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -619,11 +564,15 @@ aside {
 }
 
 h4 {
-  margin: 0px;
+  margin-top: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 260px;
+  display: block;
 }
 
 .menutxt {
-  padding-top: 4px;
   margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -631,6 +580,11 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 260px;
+  display: block;
 }
 
 .check {
@@ -656,6 +610,14 @@ h4 {
 .prix {
   font-weight: bold;
   background-color: #ffffff;
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .bouton {
@@ -678,13 +640,7 @@ h4 {
   }
 }
 
-@media (min-width: 1200px) {
-  .bouton {
-    width: 1220px;
-  }
-}
-
-/* Menu */
+/** Menu **/
 h2 {
   font-family: 'Shrikhand', Arial, sans-serif;
   font-size: 28px;
