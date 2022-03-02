@@ -2,79 +2,115 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="sass/main.css" />
 		<script src="https://kit.fontawesome.com/70156e9f67.js" crossorigin="anonymous"></script>
-		<title>Ohmyfood</title>
-		
+		<title>Ohmyfood</title>	
     </head>
 	<body>
-	
-        <header><!-- Logo+retour_acceuil -->
-        <a href="index.html" title="Acceuil"><i class="fas fa-arrow-left"></i><img src="images/ohmyfood@2x.svg"/></a>
+	<div class="mepbodymenu">
+        <header class="entete-menu"><!-- Logo+retour_acceuil -->
+            <a href="index.html" title="Acceuil"><i class="fas fa-arrow-left"></i><h2>ohmyfood</h2></a>
         </header><!-- Logo+retour_acceuil -->
 	
-        <section><!-- Photo_restau+nom+coeur -->
-            <img src="images/Alafrancaisemenu.jpg">
+        <section class="photo-nom--2"><!-- Photo_restau+nom+coeur -->
             <h2>A la française</h2>
-            <i class="far fa-heart"></i>
+            <span class="coeur--vide__menu"><i class="far fa-heart"></i></span>
+            <span class="coeur--plein__menu"><i class="fas fa-heart"></i></span>
         </section><!-- Photo_restau+nom+coeur -->
     
-        <article><!-- Nom plats+prix+coche de validation -->
-            <h4>ENTREES</h4>
-            <div class="plats">
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange<span class="prix">25€</span></p>
-                <i class="far fa-check-circle"></i>
+        <article class="menu-mep"><!-- Nom plats+prix+coche de validation -->
+            <div class="blockmenu">
+            <h3 class="titresoul">ENTREES</h3>
+            <a class="plats--1">
+                <div class="left">
+                <h4>Tartare de poulpe acidulé</h4>
+                <p class="menutxt">Aux zests d'orange</p>
+                <span class="prix">25€</span>
+                </div>
+                <div class="check"><i class="far fa-check-circle"></i></div>
+            </a>
+            <a class="plats--2">
+                <div class="left">
+                <h4>Velouté de légumes d'antan</h4>
+                <p class="menutxt">Carotte, panais, topinambour</p>
+                <span class="prix">35€</span>
+                </div>
+                <div class="check"><i class="far fa-check-circle"></i></div>
+            </a>
+            <a class="plats--3">
+                <div class="left">
+                <h4>Soupe à l'oignon</h4>
+                <p class="menutxt">Revisitée</p>
+                <span class="prix">20€</span>
+                </div>
+                <div class="check"><i class="far fa-check-circle"></i></div>
+            </a>
             </div>
-            <div class="plats">
-                <h3>Velouté de légumes d'antan</h3>
-                <p>Carotte, panais, topinambour<span class="prix">35€</span></p>
-                <i class="far fa-check-circle"></i>
+            <div class="blockmenu">
+            <h3 class="titresoul">PLATS</h3>
+            <a class="plats--4">
+                <div class="left">
+                <h4>Coquilles Saint-Jacques</h4>
+                <p class="menutxt">Accompagnées d'une purée de panais</p>
+                <span class="prix">40€</span>
+                </div>
+                <div class="check"><i class="far fa-check-circle"></i></div>
+            </a>
+            <a class="plats--5">
+                <div class="left">
+                <h4>Magret de canard</h4>
+                <p class="menutxt">Et parmentier de pommes de terres</p>
+                <span class="prix">35€</span>
+                </div>
+                <div class="check"><i class="far fa-check-circle"></i></div>
+            </a>
+            <a class="plats--6">
+                <div class="left">
+                <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                <p class="menutxt">Sur son lit de gnocchis aux légumes</p>
+                <span class="prix">44€</span>
+                </div>
+                <div class="check"><i class="far fa-check-circle"></i></div>
+            </a>
             </div>
-            <div class="plats">
-                <h3>Soupe à l'oignon</h3>
-                <p>Revisitée<span class="prix">20€</span></p>
-                <i class="far fa-check-circle"></i>
+            <div class="blockmenu">
+            <h3 class="titresoul">DESSERTS</h3>
+            <a class="plats--7">
+                <div class="left">
+                <h4>Pétales de violettes glacés</h4>
+                <p class="menutxt">Et purée de noisettes</p>
+                <span class="prix">18€</span>
+                </div>
+                <div class="check"><i class="far fa-check-circle"></i></div>
+            </a>
+            <a class="plats--8">
+                <div class="left">
+                <h4>Fondant au chocolat</h4>
+                <p class="menutxt">Revisité</p>
+                <span class="prix">22€</span>
+                </div>
+                <div class="check"><i class="far fa-check-circle"></i></div>
+            </a>
+            <a class="plats--9">
+                <div class="left">
+                <h4>Millefeuile croustillant</h4>
+                <p class="menutxt">Myrtilles et pâte d'amande</p>
+                <span class="prix">23€</span>
+                </div>
+                <div class="check"><i class="far fa-check-circle"></i></div>
+            </a>
             </div>
-            <h4>PLATS</h4>
-            <div class="plats">
-                <h3>Coquilles Saint-Jacques</h3>
-                <p>Accompagnées d'une purée de panais<span class="prix">40€</span></p>
-                <i class="far fa-check-circle"></i>
-            </div>
-            <div class="plats">
-                <h3>Magret de canard</h3>
-                <p>Et parmentier de pommes de terres<span class="prix">35€</span></p>
-                <i class="far fa-check-circle"></i>
-            </div>
-            <div class="plats">
-                <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-                <p>Sur son lit de gnocchis aux légumes<span class="prix">44€</span></p>
-                <i class="far fa-check-circle"></i>
-            </div>
-            <h4>DESSERTS</h4>
-            <div class="plats">
-                <h3>Pétales de violettes glacés</h3>
-                <p>Et purée de noisettes<span class="prix">18€</span></p>
-                <i class="far fa-check-circle"></i>
-            </div>
-            <div class="plats">
-                <h3>Fondant au chocolat</h3>
-                <p>Revisité<span class="prix">22€</span></p>
-                <i class="far fa-check-circle"></i>
-            </div>
-            <div class="plats">
-                <h3>Millefeuile croustillant</h3>
-                <p>Myrtilles et pâte d'amande<span class="prix">23€</span></p>
-                <i class="far fa-check-circle"></i>
-            </div>
-            <button class="btn--commander">Commander</button>    
-    
-	    <footer><!-- identique_ttes_pages -->
-            <a href="logo_Ohmyfood"><img src="images/ohmyfood@2x.svg"/></a>
-            <i class="fas fa-utensils"></i><p>Proposer un restaurant</p>
-            <i class="fas fa-hands-helping"></i><p>Devenir partenaire</p>
-            <p>Mentions légales</p>
+        </article><!-- Nom plats+prix+coche de validation -->
+
+        <div class="bouton">
+            <button class="btn--commander">Commander</button>
+        </div>  
+    </div>
+	    <footer class="foot"><!-- identique_ttes_pages -->
+            <a href="index.html" title="page acceuil"><h2>Ohmyfood</h2></a>
+            <a href="#" title="#"><p><i class="fas fa-utensils"></i> Proposer un restaurant</p></a>
+            <a href="#" title="#"><p><i class="fas fa-hands-helping"></i> Devenir partenaire</p></a>
+            <a href="#" title="#"><p>Mentions légales</p></a>
             <a href="mailto:ohmyfoodcontact@gmail.com" title="mail"><p>Contact</p></a>
 	    </footer><!-- identique_ttes_pages -->
 	</body>

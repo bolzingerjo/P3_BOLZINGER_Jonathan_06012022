@@ -238,22 +238,32 @@ aside{
 /* fin index */
 /* Menu */
 .photo-nom--1 h2{
-        border-radius: 30px 30px 0px 0px;
-        position: absolute;
-        top: 225px;
-        background-color: $Menthe__fond;
-        font-size: 35px;
-        padding-top: 30px;
-        padding-left: 10px;
-        width: 99%;
+        @include photo-nom-h2;
 }
 .photo-nom--1{
         background-image: url(../../images/Lapalettedugoutentete1900.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-        width: 100%;
-        position: relative;
+        @include photo-nom;
+}
+.photo-nom--2 h2{
+        @include photo-nom-h2;
+}
+.photo-nom--2{
+        background-image: url(../../images/Alafrancaiseentete1900.jpg);
+        @include photo-nom;
+}
+.photo-nom--3 h2{
+        @include photo-nom-h2;
+}
+.photo-nom--3{
+        background-image: url(../../images/lanoteenchanteentete1900.jpg);
+        @include photo-nom;
+}
+.photo-nom--4 h2{
+        @include photo-nom-h2;
+}
+.photo-nom--4{
+        background-image: url(../../images/ledelicedessensentete1900.jpg);
+        @include photo-nom;
 }
 .coeur--plein__menu{
         opacity: 0;
@@ -301,7 +311,7 @@ aside{
         width: 70px;
 }
 .plats{
-        @for $i from 1 to 10 {
+        @for $i from 1 to 11 {
                 &--#{$i} {
                         animation-delay: 1s / 10 * $i;
                 }
@@ -318,7 +328,7 @@ aside{
             }
     }
 
-.plats--1, .plats--2, .plats--3, .plats--4, .plats--5, .plats--6, .plats--7, .plats--8, .plats--9{
+.plats--1, .plats--2, .plats--3, .plats--4, .plats--5, .plats--6, .plats--7, .plats--8, .plats--9, .plats--10{
         display: block;
         max-width: 300px;
         padding: 20px 30px 20px 20px;
@@ -353,7 +363,6 @@ h4{
         text-overflow: ellipsis;
         overflow: hidden; 
         white-space: nowrap;
-        width: 260px;
         display: block;
 }
 .menutxt {
@@ -362,7 +371,6 @@ h4{
         text-overflow: ellipsis;
         overflow: hidden; 
         white-space: nowrap;
-        width: 260px;
         display: block;
 }
 .check{

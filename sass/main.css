@@ -384,6 +384,66 @@ aside {
   position: relative;
 }
 
+.photo-nom--2 h2 {
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+  top: 225px;
+  background-color: #f0fcf8;
+  font-size: 35px;
+  padding-top: 30px;
+  padding-left: 10px;
+  width: 99%;
+}
+
+.photo-nom--2 {
+  background-image: url(../../images/Alafrancaiseentete1900.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.photo-nom--3 h2 {
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+  top: 225px;
+  background-color: #f0fcf8;
+  font-size: 35px;
+  padding-top: 30px;
+  padding-left: 10px;
+  width: 99%;
+}
+
+.photo-nom--3 {
+  background-image: url(../../images/lanoteenchanteentete1900.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.photo-nom--4 h2 {
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+  top: 225px;
+  background-color: #f0fcf8;
+  font-size: 35px;
+  padding-top: 30px;
+  padding-left: 10px;
+  width: 99%;
+}
+
+.photo-nom--4 {
+  background-image: url(../../images/ledelicedessensentete1900.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
 .coeur--plein__menu {
   opacity: 0;
   position: absolute;
@@ -492,6 +552,11 @@ aside {
           animation-delay: 0.9s;
 }
 
+.plats--10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 @-webkit-keyframes menu {
   0% {
     opacity: 0;
@@ -518,7 +583,7 @@ aside {
   }
 }
 
-.plats--1, .plats--2, .plats--3, .plats--4, .plats--5, .plats--6, .plats--7, .plats--8, .plats--9 {
+.plats--1, .plats--2, .plats--3, .plats--4, .plats--5, .plats--6, .plats--7, .plats--8, .plats--9, .plats--10 {
   display: block;
   max-width: 300px;
   padding: 20px 30px 20px 20px;
@@ -539,14 +604,14 @@ aside {
           animation-fill-mode: backwards;
 }
 
-.plats--1:hover .check, .plats--2:hover .check, .plats--3:hover .check, .plats--4:hover .check, .plats--5:hover .check, .plats--6:hover .check, .plats--7:hover .check, .plats--8:hover .check, .plats--9:hover .check {
+.plats--1:hover .check, .plats--2:hover .check, .plats--3:hover .check, .plats--4:hover .check, .plats--5:hover .check, .plats--6:hover .check, .plats--7:hover .check, .plats--8:hover .check, .plats--9:hover .check, .plats--10:hover .check {
   -webkit-transform: translate(-80px, 0);
           transform: translate(-80px, 0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.plats--1:hover i, .plats--2:hover i, .plats--3:hover i, .plats--4:hover i, .plats--5:hover i, .plats--6:hover i, .plats--7:hover i, .plats--8:hover i, .plats--9:hover i {
+.plats--1:hover i, .plats--2:hover i, .plats--3:hover i, .plats--4:hover i, .plats--5:hover i, .plats--6:hover i, .plats--7:hover i, .plats--8:hover i, .plats--9:hover i, .plats--10:hover i {
   -webkit-transform: translate(-80px, 0);
           transform: translate(-80px, 0);
   right: 0px;
@@ -556,7 +621,7 @@ aside {
           transform: rotate(-360deg);
 }
 
-.plats--1:hover .prix, .plats--2:hover .prix, .plats--3:hover .prix, .plats--4:hover .prix, .plats--5:hover .prix, .plats--6:hover .prix, .plats--7:hover .prix, .plats--8:hover .prix, .plats--9:hover .prix {
+.plats--1:hover .prix, .plats--2:hover .prix, .plats--3:hover .prix, .plats--4:hover .prix, .plats--5:hover .prix, .plats--6:hover .prix, .plats--7:hover .prix, .plats--8:hover .prix, .plats--9:hover .prix, .plats--10:hover .prix {
   -webkit-transform: translate(-80px, 0);
           transform: translate(-80px, 0);
   -webkit-transition: all 0.5s ease;
@@ -568,7 +633,6 @@ h4 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 260px;
   display: block;
 }
 
@@ -583,7 +647,6 @@ h4 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 260px;
   display: block;
 }
 
