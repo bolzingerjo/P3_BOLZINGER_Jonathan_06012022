@@ -21,6 +21,9 @@ body {
 }
 
 .loader {
+  background-image: url(../../images/loader.gif);
+  background-size: cover;
+  background-position: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -473,6 +476,78 @@ aside {
   cursor: pointer;
 }
 
+@media (min-width: 960px) {
+  .blockmenu--1 {
+    max-width: 322px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--2 {
+    max-width: 327px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--3 {
+    max-width: 305px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--4 {
+    max-width: 302px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--5 {
+    max-width: 295px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--6 {
+    max-width: 325px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--7 {
+    max-width: 261px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--8 {
+    max-width: 299px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--9 {
+    max-width: 253px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--10 {
+    max-width: 295px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--11 {
+    max-width: 317px;
+  }
+}
+
+@media (min-width: 960px) {
+  .blockmenu--12 {
+    max-width: 220px;
+  }
+}
+
 .menu-mep {
   background-color: #f0fcf8;
   margin: 0px;
@@ -487,7 +562,6 @@ aside {
 
 @media (min-width: 960px) {
   .menu-mep {
-    width: 98%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -585,7 +659,6 @@ aside {
 
 .plats--1, .plats--2, .plats--3, .plats--4, .plats--5, .plats--6, .plats--7, .plats--8, .plats--9, .plats--10 {
   display: block;
-  max-width: 300px;
   padding: 20px 30px 20px 20px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -626,6 +699,16 @@ aside {
           transform: translate(-80px, 0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.plats--1:hover .left, .plats--2:hover .left, .plats--3:hover .left, .plats--4:hover .left, .plats--5:hover .left, .plats--6:hover .left, .plats--7:hover .left, .plats--8:hover .left, .plats--9:hover .left, .plats--10:hover .left {
+  padding-right: 110px;
+}
+
+@media (min-width: 960px) {
+  .plats--1:hover .left, .plats--2:hover .left, .plats--3:hover .left, .plats--4:hover .left, .plats--5:hover .left, .plats--6:hover .left, .plats--7:hover .left, .plats--8:hover .left, .plats--9:hover .left, .plats--10:hover .left {
+    padding-right: 110px;
+  }
 }
 
 h4 {
@@ -695,12 +778,6 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-}
-
-@media (min-width: 640px) {
-  .bouton {
-    width: 100%;
-  }
 }
 
 /** Menu **/

@@ -31,6 +31,9 @@ body{
         
 }
 .loader {
+        background-image: url(../../images/loader.gif);
+        background-size: cover;
+        background-position: center;
         position: fixed;
         top: 0;
         left: 0;
@@ -42,13 +45,13 @@ body{
         text-align: center;
         padding-top: 40px;
         animation: disapear 3s forwards;
-}     
+} 
 @keyframes disapear {
         0% { opacity: 1; }
         30% { opacity: 1; }
         99% { opacity: 0; }
         100% { opacity: 0; display: none; z-index: -100; }
-      }
+}
 
 .mepbodymenu {
         @media (min-width: 640px) {
@@ -289,6 +292,66 @@ aside{
                 cursor: pointer;
         }
 }
+.blockmenu--1{
+        @media (min-width: 960px) {
+                max-width: 322px;
+        }
+}
+.blockmenu--2{
+        @media (min-width: 960px) {
+                max-width: 327px;
+        }
+}
+.blockmenu--3{
+        @media (min-width: 960px) {
+                max-width: 305px;
+        }
+}
+.blockmenu--4{
+        @media (min-width: 960px) {
+                max-width: 302px;
+        }
+}
+.blockmenu--5{
+        @media (min-width: 960px) {
+                max-width: 295px;
+        }
+}
+.blockmenu--6{
+        @media (min-width: 960px) {
+                max-width: 325px;
+        }
+}
+.blockmenu--7{
+        @media (min-width: 960px) {
+                max-width: 261px;
+        }
+}
+.blockmenu--8{
+        @media (min-width: 960px) {
+                max-width: 299px;
+        }
+}
+.blockmenu--9{
+        @media (min-width: 960px) {
+                max-width: 253px;
+        }
+}
+.blockmenu--10{
+        @media (min-width: 960px) {
+                max-width: 295px;
+        }
+}
+.blockmenu--11{
+        @media (min-width: 960px) {
+                max-width: 317px;
+        }
+}
+.blockmenu--12{
+        @media (min-width: 960px) {
+                max-width: 220px;
+        }
+}
 .menu-mep{
         background-color: $Menthe__fond;
         margin: 0px;
@@ -297,7 +360,6 @@ aside{
                         width: 97%;
                 }
                 @media (min-width: 960px) {
-                        width: 98%;
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
@@ -330,7 +392,6 @@ aside{
 
 .plats--1, .plats--2, .plats--3, .plats--4, .plats--5, .plats--6, .plats--7, .plats--8, .plats--9, .plats--10{
         display: block;
-        max-width: 300px;
         padding: 20px 30px 20px 20px;
         background-color: $Blanc;
         border-radius: 20px;
@@ -356,8 +417,13 @@ aside{
                 transform: translate(-80px, 0);
                 transition: all 0.5s ease;
         }
+        &:hover .left{
+                padding-right: 110px;
+                @media (min-width: 960px) {
+                        padding-right: 110px;
+                }
+        }
 }
-
 h4{
         margin-top: 0px;
         text-overflow: ellipsis;
@@ -403,8 +469,5 @@ h4{
         justify-content: center;
         align-items: center;
         width: 100%;
-        @media (min-width: 640px) {
-                width: 100%;
-        }
 }
 /** Menu **/
