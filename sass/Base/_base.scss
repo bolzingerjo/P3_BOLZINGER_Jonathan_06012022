@@ -19,13 +19,14 @@ body{
         z-index: 100;
         text-align: center;
         padding-top: 40px;
-        animation: disapear 3s forwards;
+        animation: disapear 2s forwards;
 } 
 @keyframes disapear {
         0% { opacity: 1; }
-        30% { opacity: 1; }
-        99% { opacity: 0; }
-        100% { opacity: 0; display: none; z-index: -100; }
+        30% { transform: translateY(0);}
+        60% { transform: translateY(0);}
+        99% { transform: translateY(0);}
+        100% { transform: translateY(-9999px); display: none; }
 }
 
 .mepbodymenu {
